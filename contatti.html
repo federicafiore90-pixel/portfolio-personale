@@ -83,7 +83,10 @@
       <div class="form-field"><label for="email">Email <span class="required" aria-hidden="true">*</span></label><input id="email" name="email" type="email" placeholder="esempio@gmail.com" autocomplete="email" required></div>
       <div class="form-field"><label for="messaggio">Messaggio <span class="required" aria-hidden="true">*</span></label><textarea id="messaggio" name="messaggio" placeholder="Scrivi il tuo messaggio" required></textarea><span class="field-help">In cosa posso aiutarti?</span></div>
       <fieldset><legend>Tipi di servizi</legend>
-        <div class="radio-option"><input id="ui" type="radio" name="servizio" value="ux-ui"><label for="ui">UX/UI</label></div>
+       <div class="radio-option">
+  <input type="radio" id="ux-ui" name="servizio" value="UX/UI" required>
+  <label for="ux-ui">UX/UI</label>
+       </div>
         <div class="radio-option"><input id="research" type="radio" name="servizio" value="ux-research"><label for="research">UX Research</label></div>
         <div class="radio-option"><input id="brand" type="radio" name="servizio" value="brand-identity"><label for="brand">Brand Identity</label></div>
         <div class="radio-option"><input id="altro" type="radio" name="servizio" value="altro"><label for="altro">Altro</label></div>

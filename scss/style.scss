@@ -616,12 +616,57 @@ img {
   }
 
   .project-grid {
+    --bs-gutter-x: 16px;
     --bs-gutter-y: 16px;
   }
 }
-  .project-card > img {
-  height: 234px;
-  object-position: center 45%;
+
+.project-card {
+  height: 100%;
+  background: #f7f7f8;
+  border-radius: 8px;
+  overflow: hidden;
+
+  > img {
+    width: 100%;
+    height: 234px;
+    display: block;
+    object-fit: cover;
+    object-position: center 45%;
+  }
+
+  .card-body {
+    min-height: 295px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 1.4;
+    margin-bottom: 0;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+
+  .project-link {
+    color: #1685c1;
+    font-size: 18px;
+    margin-top: auto;
+  }
 }
 .contact-main.content-width {
   width: 100%;
